@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <script src="/static/js/bootstrap.min.js"></script>
+    <script src="/static/js/jquery.min.js"></script>
+</head>
+<body>
+    <ol class="breadcrumb my-4">
+        <li class="breadcrumb-item"><a href="../index.html">Boards</a></li>
+        <li class="breadcrumb-item"><a href="/board/{$id.id}">{$name}</a></li>
+        <li class="breadcrumb-item">New Topic</a></li>
+    </ol>
+    <form action="/insertDatabase/{$name}" method="post">
+        <p>标题</p>
+        <div class="form-group">
+            <input type="text" style="background: transparent;" id="" name="topic" class="form-control">
+        </div>
+        <div class="form-group">
+            <textarea rows="20" cols="50" id="" name="content" class="form-control"></textarea>
+        </div>
+        <div class="form-group">
+            <input type="hidden" class="{$name}" >
+            <input type="submit" value="发表" class="btn btn-success">
+            <input type="reset" value="清空" class="btn-danger">
+        </div>
+    </form>
+</body>
+</html>
