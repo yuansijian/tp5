@@ -1,20 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
-    <script src="/static/js/bootstrap.min.js"></script>
-    <script src="/static/js/jquery.min.js"></script>
-</head>
-<body>
+{extend name="base" /}
+
+{block name="title"}Boards{/block}
+
+{block name="main"}
+
 <div class="container">
     <ol class="breadcrumb my-4">
         <li class="breadcrumb-item active"><a href="/">Boards</a></li>
-        <li class="breadcrumb-item">{$name.board}</li>
+        <li class="breadcrumb-item">{$name}</li>
     </ol>
     <div class="mb-4">
-        <a href="/newTopic/{$name.board}" class="btn btn-primary">New topic</a>
+        <a href="/newTopic/{$name}" class="btn btn-primary">New topic</a>
     </div>
     <table class="table table-striped mb-4">
         <thead class="thead-light">
@@ -39,5 +35,4 @@
         {/volist}
     </table>
 </div>
-</body>
-</html>
+{/block}
