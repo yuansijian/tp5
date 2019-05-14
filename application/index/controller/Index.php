@@ -5,15 +5,18 @@ use think\Controller;
 use think\Db;
 use think\Request;
 use think\Model;
+use think\Cookie;
 
 class Index extends  Controller
 {
     //主页显示
     public function index()
     {
+        $name = Cookie::get('name');
         $data = Db::query("select * from home");
 
         $this->assign('data', $data);
+        $this->assign('name', $name);
 
         return view();
     }
@@ -28,7 +31,7 @@ class Index extends  Controller
 //        dump($data);
 
 
-        $this->assign('name', $name[0]);
+        $this->assign('name', $name[0]['board']);
         $this->assign('data', $data);
 //        dump($data);
 
@@ -39,7 +42,7 @@ class Index extends  Controller
     public function newTopic($name){
         $id = Db::query("select id from home where board=?", [$name]);
 
-        $this->assign('id', $id[0]);
+        $this->assign('id', $id[0]['id']);
         $this->assign('name', $name);
         return $this->fetch();
     }
