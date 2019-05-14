@@ -27,3 +27,7 @@ Route::rule('newTopic/:name', 'index/index/newTopic');
 Route::rule('/', 'index/index/index');
 Route::rule('insertDatabase/:name', 'index/index/insertDatabase', 'post');
 Route::rule('content/:topic', 'index/index/content');
+Route::rule('checkUser', 'index/login/checkUser', 'post');
+Route::rule('signUp/', 'index/login/signUp');
+Route::rule('insertDatabase/', 'index/login/insertDatabase');
+Route::rule('login/', 'index/login/index');
