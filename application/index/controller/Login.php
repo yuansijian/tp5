@@ -15,6 +15,11 @@ class Login extends Controller
 {
     //登录界面
     public function index(){
+        //有Cookie清初Cookie
+        if(Cookie::has('name')){
+            Cookie::clear('name');
+        }
+
         return $this->fetch();
     }
 
@@ -82,5 +87,10 @@ class Login extends Controller
 //                $this->success();
 //            }
 //        }
+    }
+
+    //忘记密码处理  有待完善
+    public function forgetPassword(){
+        return $this->fetch();
     }
 }
