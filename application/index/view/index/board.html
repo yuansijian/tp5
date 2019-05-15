@@ -7,10 +7,10 @@
 <div class="container">
     <ol class="breadcrumb my-4">
         <li class="breadcrumb-item active"><a href="/">Boards</a></li>
-        <li class="breadcrumb-item">{$name}</li>
+        <li class="breadcrumb-item">{$board_name}</li>
     </ol>
     <div class="mb-4">
-        <a href="/newTopic/{$name}" class="btn btn-primary">New topic</a>
+        <a href="/newTopic/{$board_name}" class="btn btn-primary">New topic</a>
     </div>
     <table class="table table-striped mb-4">
         <thead class="thead-light">
@@ -25,7 +25,7 @@
         {volist name='data', id='value'}
         <tbody>
         <td>
-            <a href="/content/{$value.topic}">{$value.topic}</a>
+            <a href="/content/{$board_name}/{$value.topic}">{$value.topic}</a>
         </td>
         <td>{$value.start}</td>
         <td>{$value.replies}</td>
