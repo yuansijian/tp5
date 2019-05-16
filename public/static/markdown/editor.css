@@ -1,0 +1,30 @@
+@charset "utf-8";
+/* editor.css */
+
+body,html,div,p,h1,h2,h3,h4,h5,ul,li,ol,dl,dt,dd,textarea{ margin:0; padding:0; }
+button, fieldset, img, hr { border: 0; }
+ul,li{ list-style:none; }
+
+/*以下代码请修改。。或许 textarea 浏览器不兼容*/
+.panel{ margin:40px auto; width:700px; font-size:12px;font-family: Courier,Courier New,Consolas,Monaco,Monospace;}
+.wmd-textarea{border: 1px solid #ccc;background: #fff;box-shadow: inset 2px 3px 5px #eee;outline: 0; width:96.8%; padding:10px;font-family: Courier,Courier New,Consolas,Monaco,Monospace;}
+.wmd-textarea:focus{background:#efffff}
+
+/*以下代码如果没有必要请不要修改*/
+#wmd-button-bar{ height:34px; background: #f5f5f5; border-style: solid; border-color: #ddd; border-width: 1px 1px 0;}
+#wmd-button-row{ margin:5px; height: 24px;}
+#wmd-button-row li{ float:left; margin-right:5px; }
+#wmd-button-row .wmd-button{ width: 24px; height: 24px; cursor: pointer; background: url(images/editor.png) no-repeat 0 0;}
+.wmd-panel{border: 3px dotted #ddd;padding: 10px;margin-top: 10px; overflow-y: auto; color:#333;}
+blockquote{ border-left:5px #eee solid; padding-left:12px; line-height:20px; color:#444; }
+hr { border-top: 1px dashed #ccc; height: 0; overflow: hidden; }
+code{font-family: Courier,Courier New,Consolas,Monaco,Monospace;}
+.wmd-prompt-background{ background:rgba(0,0,0,0.5)}
+.wmd-prompt-dialog{box-shadow: 0 0 12px rgba(0,0,0,0.5);background-color: #FFF;}
+.wmd-prompt-dialog h3{ font-size:14px; font-family:Microsoft yahei; padding:10px ; border-bottom:1px #eee solid; color:#444;}
+.wmd-prompt-dialog p{ font-size:12px; padding-left:10px; padding-top:7px;}
+.wmd-prompt-dialog .opt-tip{ color:#333}
+.wmd-prompt-dialog .opt-exp{ color:#F60; font-family:"Courier New", Courier, monospace; margin-bottom:10px;}
+.wmd-prompt-dialog input[type="text"]{ outline: none; border: 1px solid #d8d8d8; border-color: #c0c0c0 #e1e1e1 #e1e1e1 #c0c0c0; padding:5px;}
+.wmd-prompt-dialog input[type="button"]{overflow:visible;-moz-box-shadow:inset 0 1px 0 0 #fff;-webkit-box-shadow:inset 0 1px 0 0 #fff;box-shadow:inset 0 1px 0 0 #fff;background:-webkit-gradient(linear,left top,left bottom,color-stop(0.05,#f5f5f5),color-stop(1,#e6e6e6));background:-moz-linear-gradient(top,#f5f5f5 5%,#e6e6e6 100%);background:-webkit-linear-gradient(top,#f5f5f5 5%,#e6e6e6 100%);background:-o-linear-gradient(top,#f5f5f5 5%,#e6e6e6 100%);background:-ms-linear-gradient(top,#f5f5f5 5%,#e6e6e6 100%);background:linear-gradient(to bottom,#f5f5f5 5%,#e6e6e6 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f5f5f5',endColorstr='#e6e6e6',GradientType=0);background-color:#f5f5f5;border:1px solid #ccc;display:inline-block;color:#1a1a1a;font-family:Verdana,Simsun;font-size:12px;font-weight:normal;padding:5px 20px;cursor:pointer;text-decoration:none;text-shadow:0 1px 0 #fff}.wmd-prompt-dialog input[type="button"]:hover{background:-webkit-gradient(linear,left top,left bottom,color-stop(0.05,#e6e6e6),color-stop(1,#f5f5f5));background:-moz-linear-gradient(top,#e6e6e6 5%,#f5f5f5 100%);background:-webkit-linear-gradient(top,#e6e6e6 5%,#f5f5f5 100%);background:-o-linear-gradient(top,#e6e6e6 5%,#f5f5f5 100%);background:-ms-linear-gradient(top,#e6e6e6 5%,#f5f5f5 100%);background:linear-gradient(to bottom,#e6e6e6 5%,#f5f5f5 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#e6e6e6',endColorstr='#f5f5f5',GradientType=0);background-color:#e6e6e6}
+.pln{color:#000}@media screen{.str{color:#080}.kwd{color:#008}.com{color:#800}.typ{color:#606}.lit{color:#066}.pun,.opn,.clo{color:#660}.tag{color:#008}.atn{color:#606}.atv{color:#080}.dec,.var{color:#606}.fun{color:red}}@media print,projection{.str{color:#060}.kwd{color:#006;font-weight:bold}.com{color:#600;font-style:italic}.typ{color:#404;font-weight:bold}.lit{color:#044}.pun,.opn,.clo{color:#440}.tag{color:#006;font-weight:bold}.atn{color:#404}.atv{color:#060}}pre.prettyprint{padding:8px;border: 1px dashed #ddd;font-size: 12px;line-height: 16px;word-wrap: break-word; }ol.linenums{margin-top:0;margin-bottom:0}li.L0,li.L1,li.L2,li.L3,li.L5,li.L6,li.L7,li.L8{list-style-type:none}li.L1,li.L3,li.L5,li.L7,li.L9{background:#eee}
